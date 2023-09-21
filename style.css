@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+*, *::after, *::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ffcc50;
+    --text-color: #000000;
+}
+
+body {
+    align-items: center;
+    background-color: var(--primary-color);
+    display: flex;  
+    flex-direction: column;
+    font-family: 'Comic Neue', cursive;  
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .5);
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: bold;  
+    padding: .5rem 1rem; 
+}
+
+h1 {
+    font-size: 4rem;
+    text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .5);  
+    padding: 16px;
+}
+
+.game-state {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;  
+    justify-content: center;
+    width: 100vw;
+    display: flex;
+}
+
+p {
+    color: var(--text-color);
+    padding: 16px;
+    font-size: 1.75rem;
+}
+
+a {
+    color: var(--text-color);
+    font-weight: bold;
+     
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the contents vertically and horizontally */
+    margin-top: 20px; /* Add margin for spacing */
+    width: 480px; /* Adjust the width as needed */
+    height: 180px; /* Adjust the height as needed */
+}
+
+textarea {
+    border-radius: 4px;
+    border-width: 3px;
+    padding: 16px;
+    font-size: large;
+    border-color: #000000;
+    resize: none;
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .5);
+    margin: 5px; /* Add margin between the textareas */
+}
+
+textarea:focus {
+    outline: none;
+}
+
+#text-to-type {
+    position: absolute;
+    color: #00000073;
+    background-color: white;
+    width: inherit;
+    height: inherit;
+    pointer-events: none;
+}
+
+#user-input {
+    position: absolute;
+    background-color: transparent;
+    width: inherit;
+    height: inherit;
+}

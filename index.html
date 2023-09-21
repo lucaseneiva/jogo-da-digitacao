@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Digitação</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    
+  </header>
+
+  <main>
+    <section aria-label="Estados do jogo">
+
+
+        <div class="game-state">
+            <p>Digite o mais rápido que puder!</p>
+            <div class="text-container">
+                <textarea id="text-to-type" readonly>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, voluptate natus. Ad qui totam rerum odio iusto ipsa modi quas cumque praesentium corporis voluptatem, quaerat saepe quis aut ex! Consequuntur.</textarea>
+                <textarea id="user-input"></textarea>
+            </div>
+        </div>
+        
+
+        <div class="game-state" id="title">
+            <h1>Jogo da Digitação</h1>
+            <button>Começar</button>
+          </div>
+
+        <div class="game-state" id="countdown">
+            <h1>1.. 2.. 3..</h1>
+        </div>
+
+        
+        
+        <div class="game-state" id="score">
+            <p>Sua velocidade foi de XXXwpm</p>
+            <button>Recomeçar</button>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Criado por <a href="https://github.com/lucasneiva">Lucas Neiva</a></p>
+  </footer>
+
+</body>
+
+</html>
